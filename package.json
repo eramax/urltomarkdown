@@ -2,7 +2,6 @@
   "name": "urltomarkdown",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
   "dependencies": {
     "@7c/validurl": "^0.0.3",
     "@mozilla/readability": "^0.5.0",

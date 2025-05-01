@@ -1,3 +1,5 @@
+import { convertToMarkdown } from './url_to_markdown_processor.js';
+
 chrome.runtime.onMessage.addListener((request, sender, sendResponse) => {
   if (request.action === 'convertToMarkdown') {
     const html = document.documentElement.outerHTML;
@@ -5,9 +7,3 @@ chrome.runtime.onMessage.addListener((request, sender, sendResponse) => {
     chrome.runtime.sendMessage({ action: 'downloadMarkdown', markdown: markdown });
   }
 });
-
-function convertToMarkdown(html) {
-  // Implement the logic to convert HTML to markdown
-  // This is a placeholder function and should be replaced with actual implementation
-  return html;
-}
